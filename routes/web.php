@@ -15,6 +15,10 @@ Route::get('/', [
    "uses" => "BlogController@index",
 ]);
 
-Route::get('/detail', function () {
-    return view('blog/detail');
+Route::get('/detail/{id}', [
+   "uses" => "BlogController@show",
+]);
+
+Route::get('/about', function () {
+    return view('blog/about');
 });

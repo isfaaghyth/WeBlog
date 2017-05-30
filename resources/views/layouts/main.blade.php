@@ -36,8 +36,8 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">Beranda</a></li>
-                    <li><a href="about.html">Tentang</a></li>
+                    <li><a href="/">Beranda</a></li>
+                    <li><a href="/about">Tentang</a></li>
                     <li><a href="contact.html">Kontak</a></li>
                 </ul>
             </div>

@@ -31,11 +31,11 @@
 
                 @endforeach
                 <!-- Pager -->
-                <ul class="pager">
+                <!-- <ul class="pager">
                     <li class="next">
                         <a href="#">Older Posts &rarr;</a>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </div>
     </div>

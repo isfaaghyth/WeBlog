@@ -38,7 +38,22 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="/">Beranda</a></li>
                     <li><a href="/about">Tentang</a></li>
-                    <li><a href="contact.html">Kontak</a></li>
+                    <li><a href="/contact">Kontak</a></li>
+                    @if (!Auth::guest())
+                    <li><a href="/dashboard">Dashboard</a></li>
+                    <li>
+                       <a href="{{ route('logout') }}"
+                          onclick="event.preventDefault();
+                                   document.getElementById('logout-form').submit();">
+                          Keluar
+                       </a>
+                       <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                          {{ csrf_field() }}
+                       </form>
+                    </li>
+                    @else
+                    <li><a href="{{ route('login') }}">Masuk</a></li>
+                    @endif
                 </ul>
             </div>
         </div>

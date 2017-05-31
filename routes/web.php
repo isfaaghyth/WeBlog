@@ -25,4 +25,8 @@ Route::get('/about', function () {
     return view('blog/about');
 });
 
-Route::get('/dashboard', 'HomeController@index')->name('home');
+Route::get('/contact', function () {
+    return view('blog/contact');
+});
+
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');

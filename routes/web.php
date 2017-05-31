@@ -11,6 +11,8 @@
 |
 */
 
+Auth::routes();
+
 Route::get('/', [
    "uses" => "BlogController@index",
 ]);
@@ -22,3 +24,5 @@ Route::get('/detail/{id}', [
 Route::get('/about', function () {
     return view('blog/about');
 });
+
+Route::get('/dashboard', 'HomeController@index')->name('home');

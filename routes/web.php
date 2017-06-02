@@ -33,7 +33,9 @@ Route::get('/contact', function () {
 
 //DASHBOARD
 
-Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+Route::get('/dashboard', [
+   "uses" => 'DashboardController@index',
+]);
 
 Route::get('/dashboard/add', function () {
     return view('posts/add');

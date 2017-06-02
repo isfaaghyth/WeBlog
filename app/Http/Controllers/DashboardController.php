@@ -20,7 +20,7 @@ class DashboardController extends Controller{
    public function delete($id) {
       $user = Post::find($id);
       $user->delete();
-      return view("posts.list");
+      return view('posts.list');
    }
 
    static public function slugify($text){

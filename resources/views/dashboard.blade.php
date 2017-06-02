@@ -8,7 +8,7 @@
                         <span class="subheading">Hai, {{ Auth::user()->name }}</span>
                         <br><br>
                         <a href="/dashboard/add" class="btn btn-primary">+</a>
-                        <a href="/dashboard/list" class="btn btn-primary">Daftar Post</a>
+                        <a href="/dashboard" class="btn btn-primary">Daftar Post</a>
                     </div>
                 </div>
             </div>

@@ -13,6 +13,8 @@
 
 Auth::routes();
 
+//POST ROUTE
+
 Route::get('/', [
    "uses" => "BlogController@index",
 ]);
@@ -29,12 +31,20 @@ Route::get('/contact', function () {
     return view('blog/contact');
 });
 
+//DASHBOARD
+
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+
 Route::get('/dashboard/add', function () {
     return view('posts/add');
 });
 
-Route::get('/dashboard/list', function () {
-    return view('posts/list');
-});
+//POSTING
 
-Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+Route::post('/article/add', [
+   "uses" => "DashboardController@store"
+]);
+
+Route::get('/article/delete/{id}',[
+   "uses" => "DashboardController@delete",
+]);

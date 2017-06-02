@@ -33,7 +33,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="/">Beranda</a></li>
                     <li><a href="/about">Tentang</a></li>
-                    <li><a href="/contact">Kontak</a></li>
+                    <!-- <li><a href="/contact">Kontak</a></li> -->
                     @if (!Auth::guest())
                     <li><a href="/dashboard">Dashboard</a></li>
                     <li>

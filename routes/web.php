@@ -29,4 +29,12 @@ Route::get('/contact', function () {
     return view('blog/contact');
 });
 
+Route::get('/dashboard/add', function () {
+    return view('posts/add');
+});
+
+Route::get('/dashboard/list', function () {
+    return view('posts/list');
+});
+
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
